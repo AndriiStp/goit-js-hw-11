@@ -3,7 +3,7 @@ const stop = document.querySelector('[data-stop]');
 const bodyEl = document.querySelector('body');
 
 start.addEventListener('click', () => {
-  const changer = setInterval(() => {
+  let changer = setInterval(() => {
     bodyEl.style.backgroundColor = getRandomHexColor();
   }, 1000);
   if (changer) {
@@ -17,7 +17,7 @@ stop.addEventListener('click', () => {
 });
 
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777214)
+  return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
