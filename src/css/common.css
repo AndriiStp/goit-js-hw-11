@@ -10,10 +10,38 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  list-style: none;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid #808080;
+  border-radius: 15px 5px;
+  background-color: #fff;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.value {
+  font-weight: 700;
+  font-size: 25;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 10;
 }
